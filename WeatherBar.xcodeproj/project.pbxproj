@@ -12,6 +12,7 @@
 		66E19C271DF25D4A00277601 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E19C251DF25D4A00277601 /* MainMenu.xib */; };
 		66E19C321DF25D4B00277601 /* WeatherBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E19C311DF25D4B00277601 /* WeatherBarTests.swift */; };
 		66E19C3D1DF25D4B00277601 /* WeatherBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E19C3C1DF25D4B00277601 /* WeatherBarUITests.swift */; };
+		66E19C4B1DF265FF00277601 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E19C4A1DF265FF00277601 /* StatusMenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		66E19C381DF25D4B00277601 /* WeatherBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66E19C3C1DF25D4B00277601 /* WeatherBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherBarUITests.swift; sourceTree = "<group>"; };
 		66E19C3E1DF25D4B00277601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66E19C4A1DF265FF00277601 /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				66E19C211DF25D4A00277601 /* AppDelegate.swift */,
 				66E19C231DF25D4A00277601 /* Assets.xcassets */,
 				66E19C251DF25D4A00277601 /* MainMenu.xib */,
+				66E19C4A1DF265FF00277601 /* StatusMenuController.swift */,
 				66E19C281DF25D4A00277601 /* Info.plist */,
 			);
 			path = WeatherBar;
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66E19C4B1DF265FF00277601 /* StatusMenuController.swift in Sources */,
 				66E19C221DF25D4A00277601 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
