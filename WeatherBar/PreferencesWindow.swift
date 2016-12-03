@@ -8,12 +8,30 @@
 
 import Cocoa
 
-class PreferencesWindow: NSWindowController {
+protocol PreferencesWindowDelegate {
+    func preferencesDidUpdate()
+}
+
+class PreferencesWindow: NSWindowController, NSWindowDelegate {
+    @IBOutlet weak var cityTextField: NSTextField!
+    
+    var delegate: PreferencesWindowDelegate?
 
     override func windowDidLoad() {
         super.windowDidLoad()
-
-        // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+        
+        self.window?.center()
+        self.window?.makeKeyAndOrderFront(nil)
+        NSApp.activate(ignoringOtherApps: true)
     }
     
+    override var windowNibName : String! {
+        return "PreferencesWindow"
+    }
+    
+    func windowWillClose(_ notification: Notification) {
+        let defaults = UserDefaults.standard
+        defaults.setValue(cityTextField.stringValue, forKey: "city")
+        delegate?.preferencesDidUpdate()
+    }
 }

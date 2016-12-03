@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		661DCA211DF2981C00EAEFC6 /* PreferencesWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661DCA1F1DF2981C00EAEFC6 /* PreferencesWindow.swift */; };
+		661DCA221DF2981C00EAEFC6 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 661DCA201DF2981C00EAEFC6 /* PreferencesWindow.xib */; };
 		66E19C221DF25D4A00277601 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E19C211DF25D4A00277601 /* AppDelegate.swift */; };
 		66E19C241DF25D4A00277601 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66E19C231DF25D4A00277601 /* Assets.xcassets */; };
 		66E19C271DF25D4A00277601 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E19C251DF25D4A00277601 /* MainMenu.xib */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		661DCA1F1DF2981C00EAEFC6 /* PreferencesWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindow.swift; sourceTree = "<group>"; };
+		661DCA201DF2981C00EAEFC6 /* PreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
 		66E19C1E1DF25D4A00277601 /* WeatherBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66E19C211DF25D4A00277601 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66E19C231DF25D4A00277601 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				66E19C211DF25D4A00277601 /* AppDelegate.swift */,
 				66E19C231DF25D4A00277601 /* Assets.xcassets */,
 				66E19C251DF25D4A00277601 /* MainMenu.xib */,
+				661DCA1F1DF2981C00EAEFC6 /* PreferencesWindow.swift */,
+				661DCA201DF2981C00EAEFC6 /* PreferencesWindow.xib */,
 				66E19C4E1DF290B500277601 /* WeatherView.swift */,
 				66E19C4C1DF26A1200277601 /* WeatherAPI.swift */,
 				66E19C4A1DF265FF00277601 /* StatusMenuController.swift */,
@@ -239,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66E19C241DF25D4A00277601 /* Assets.xcassets in Resources */,
+				661DCA221DF2981C00EAEFC6 /* PreferencesWindow.xib in Resources */,
 				66E19C271DF25D4A00277601 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66E19C4D1DF26A1200277601 /* WeatherAPI.swift in Sources */,
+				661DCA211DF2981C00EAEFC6 /* PreferencesWindow.swift in Sources */,
 				66E19C4B1DF265FF00277601 /* StatusMenuController.swift in Sources */,
 				66E19C221DF25D4A00277601 /* AppDelegate.swift in Sources */,
 				66E19C4F1DF290B500277601 /* WeatherView.swift in Sources */,
@@ -513,6 +521,7 @@
 				66E19C431DF25D4B00277601 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66E19C441DF25D4B00277601 /* Build configuration list for PBXNativeTarget "WeatherBarTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +530,7 @@
 				66E19C461DF25D4B00277601 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66E19C471DF25D4B00277601 /* Build configuration list for PBXNativeTarget "WeatherBarUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +539,7 @@
 				66E19C491DF25D4B00277601 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
