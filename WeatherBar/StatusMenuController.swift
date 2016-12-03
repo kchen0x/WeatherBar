@@ -13,6 +13,8 @@ class StatusMenuController: NSObject {
     
     let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
     
+    let weatherAPI = WeatherAPI()
+    
     override func awakeFromNib() {
         let icon = NSImage(named: "statusIcon")
         icon?.isTemplate = true // best for dark mode
@@ -22,5 +24,8 @@ class StatusMenuController: NSObject {
     
     @IBAction func quickClicked(_ sender: Any) {
         NSApplication.shared().terminate(self)
+    }
+    @IBAction func updateClicked(_ sender: Any) {
+        weatherAPI.fetchWeather(query: "Seattle")
     }
 }

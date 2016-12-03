@@ -21,6 +21,13 @@
         </customObject>
         <menu id="YuN-dv-bDb">
             <items>
+                <menuItem title="Update" id="W46-nA-21a">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="updateClicked:" target="M2U-kR-fKM" id="xEM-wW-GBz"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="Tuy-im-WAs"/>
                 <menuItem title="Quit" id="T7s-sC-FGA">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
