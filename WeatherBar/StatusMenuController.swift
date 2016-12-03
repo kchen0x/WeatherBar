@@ -13,10 +13,10 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate {
     @IBOutlet weak var weatherView: WeatherView!
     var weatherMenuItem: NSMenuItem!
     var preferencesWindow: PreferencesWindow!
-    let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
     var weatherAPI: WeatherAPI!
     
     let DEFAULT_CITY = "Seattle, WA"
+    let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
     
     override func awakeFromNib() {
         let icon = NSImage(named: "statusIcon")

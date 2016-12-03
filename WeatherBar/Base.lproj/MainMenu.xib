@@ -17,7 +17,6 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <customObject id="M2U-kR-fKM" customClass="StatusMenuController" customModule="WeatherBar" customModuleProvider="target">
             <connections>
-                <outlet property="preferencesClicked" destination="5Yo-3E-hlV" id="XMC-Y6-B1a"/>
                 <outlet property="statusMenu" destination="YuN-dv-bDb" id="MOU-ka-eM9"/>
                 <outlet property="weatherView" destination="Pwp-PC-Yp4" id="uG9-5y-6u5"/>
             </connections>
@@ -38,7 +37,7 @@
                 <menuItem title="Preferences" id="5Yo-3E-hlV" userLabel="Preferences">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="preferencesClicked:" target="M2U-kR-fKM" id="of7-AX-eBK"/>
+                        <action selector="preferencesClicked:" target="M2U-kR-fKM" id="AIZ-Sv-vPc"/>
                     </connections>
                 </menuItem>
                 <menuItem title="Quit" id="T7s-sC-FGA">
