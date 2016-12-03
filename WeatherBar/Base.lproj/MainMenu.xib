@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -17,6 +18,7 @@
         <customObject id="M2U-kR-fKM" customClass="StatusMenuController" customModule="WeatherBar" customModuleProvider="target">
             <connections>
                 <outlet property="statusMenu" destination="YuN-dv-bDb" id="MOU-ka-eM9"/>
+                <outlet property="weatherView" destination="Pwp-PC-Yp4" id="uG9-5y-6u5"/>
             </connections>
         </customObject>
         <menu id="YuN-dv-bDb">
@@ -27,6 +29,10 @@
                         <action selector="updateClicked:" target="M2U-kR-fKM" id="xEM-wW-GBz"/>
                     </connections>
                 </menuItem>
+                <menuItem isSeparatorItem="YES" id="1J4-5A-k88"/>
+                <menuItem title="Weather" id="pfu-Dh-aIt">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
                 <menuItem isSeparatorItem="YES" id="Tuy-im-WAs"/>
                 <menuItem title="Quit" id="T7s-sC-FGA">
                     <modifierMask key="keyEquivalentModifierMask"/>
@@ -35,7 +41,42 @@
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="138.5" y="-97.5"/>
+            <point key="canvasLocation" x="-1" y="-264"/>
         </menu>
+        <customView id="Pwp-PC-Yp4" customClass="WeatherView" customModule="WeatherBar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="198" height="176"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IDn-UT-akf">
+                    <rect key="frame" x="20" y="108" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="3YO-Pl-JZt"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bty-Tg-0tX" userLabel="City">
+                    <rect key="frame" x="100" y="139" width="37" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="K1W-CY-UKs">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fXQ-bI-aEs" userLabel="Temperature">
+                    <rect key="frame" x="102" y="88" width="37" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="Fwj-4L-1Qq">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <connections>
+                <outlet property="cityTextField" destination="Bty-Tg-0tX" id="ooV-F2-WR8"/>
+                <outlet property="currentConditionsTextField" destination="fXQ-bI-aEs" id="mcy-zq-rwh"/>
+                <outlet property="imageView" destination="IDn-UT-akf" id="40v-ng-bqL"/>
+            </connections>
+            <point key="canvasLocation" x="197" y="-218"/>
+        </customView>
     </objects>
 </document>

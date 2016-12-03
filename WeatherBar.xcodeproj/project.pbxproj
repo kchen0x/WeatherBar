@@ -14,6 +14,7 @@
 		66E19C3D1DF25D4B00277601 /* WeatherBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E19C3C1DF25D4B00277601 /* WeatherBarUITests.swift */; };
 		66E19C4B1DF265FF00277601 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E19C4A1DF265FF00277601 /* StatusMenuController.swift */; };
 		66E19C4D1DF26A1200277601 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E19C4C1DF26A1200277601 /* WeatherAPI.swift */; };
+		66E19C4F1DF290B500277601 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E19C4E1DF290B500277601 /* WeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		66E19C3E1DF25D4B00277601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66E19C4A1DF265FF00277601 /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		66E19C4C1DF26A1200277601 /* WeatherAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
+		66E19C4E1DF290B500277601 /* WeatherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				66E19C211DF25D4A00277601 /* AppDelegate.swift */,
 				66E19C231DF25D4A00277601 /* Assets.xcassets */,
 				66E19C251DF25D4A00277601 /* MainMenu.xib */,
+				66E19C4E1DF290B500277601 /* WeatherView.swift */,
 				66E19C4C1DF26A1200277601 /* WeatherAPI.swift */,
 				66E19C4A1DF265FF00277601 /* StatusMenuController.swift */,
 				66E19C281DF25D4A00277601 /* Info.plist */,
@@ -264,6 +267,7 @@
 				66E19C4D1DF26A1200277601 /* WeatherAPI.swift in Sources */,
 				66E19C4B1DF265FF00277601 /* StatusMenuController.swift in Sources */,
 				66E19C221DF25D4A00277601 /* AppDelegate.swift in Sources */,
+				66E19C4F1DF290B500277601 /* WeatherView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,9 +10,11 @@ import Cocoa
 
 class StatusMenuController: NSObject {
     @IBOutlet weak var statusMenu: NSMenu!
+    @IBOutlet weak var weatherView: WeatherView!
+    var weatherMenuItem: NSMenuItem!
     
     let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
-    let weatherAPI = WeatherAPI()
+    var weatherAPI: WeatherAPI!
     
     override func awakeFromNib() {
         let icon = NSImage(named: "statusIcon")
@@ -20,17 +22,27 @@ class StatusMenuController: NSObject {
         statusItem.image = icon
         statusItem.menu = statusMenu
         
+        weatherMenuItem = statusMenu.item(withTitle: "Weather")
+        weatherMenuItem.view = weatherView
+        
+        weatherAPI = WeatherAPI()
         updateWeather()
     }
     
     func updateWeather() {
-        weatherAPI.fetchWeather(query: "Seattle")
+        weatherAPI.fetchWeather(query: "Seattle, WA") { weather in
+            self.weatherView.update(weather: weather)
+        }
+    }
+    
+    func weatherDidUpdate(weather: Weather) {
+        NSLog(weather.description)
     }
 
     @IBAction func quitClicked(_ sender: Any) {
         NSApplication.shared().terminate(self)
     }
     @IBAction func updateClicked(_ sender: Any) {
-        weatherAPI.fetchWeather(query: "Seattle")
+        updateWeather()
     }
 }
