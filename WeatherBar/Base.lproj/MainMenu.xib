@@ -31,7 +31,7 @@
                 <menuItem title="Quit" id="T7s-sC-FGA">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="quickClicked:" target="M2U-kR-fKM" id="wVz-rI-h6N"/>
+                        <action selector="quitClicked:" target="M2U-kR-fKM" id="VJh-nX-B7L"/>
                     </connections>
                 </menuItem>
             </items>
